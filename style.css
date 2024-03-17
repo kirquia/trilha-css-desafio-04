@@ -1,0 +1,383 @@
+@font-face {
+    font-family: LuckiestGuy;
+    src: url(fonts/LuckiestGuy-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'Open Sans';
+    src: url(fonts/OpenSans-VariableFont_wdth\,wght.ttf);
+}
+
+body {
+    margin: 0;
+    display: grid;
+    grid: "header" 505px "section-1" 573px "section-2" 507px "section-3" 507px "section-4" 560px "footer" 140px / 1fr;
+}
+
+header {
+    grid-area: header;
+    height: 505px;
+    background-image: url(images/Header-Background.png);
+    display: grid;
+    grid: "title" 100px "p" 140px "button1" 68px "button2" 68px / 1fr;
+    gap: 0px;
+    place-content: center;
+}
+
+p {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 1rem;
+    text-align: left;
+}
+
+h1 {
+    grid-area: title;
+    font-family: LuckiestGuy, 'Comic Sans MS';
+    font-weight: 400;
+    font-size: 2rem;
+    color: #ffffff;
+    width: 278px;
+    text-align: left;
+    text-transform: uppercase;
+    margin: 0px 23.5px;
+}
+
+#p1 {
+    grid-area: p;
+    color: #ffffff;
+    width: 381px;
+    margin: 0px 23.5px;
+}
+
+button {
+    width: 381px;
+    height: 52px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 1rem;
+    text-align: center;
+    border-radius: 28px;
+    border: none;
+    padding: 0px;
+    margin: 8px 23.5px;
+}
+
+.button1 {
+    grid-area: button1;
+    color: #23272A;
+    background-color: #ffffff;
+}
+
+.button2 {
+    grid-area: button2;
+    color: #ffffff;
+    background-color: #23272A;
+}
+
+section {
+    display: grid;
+    grid: "img" auto "h2" auto "p2" auto / 1fr;
+    gap: 0px;
+    place-content: center;
+}
+
+h2 {
+    grid-area: h2;
+    width: 370px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 800;
+    font-size: 1.5rem;
+    text-align: left;
+    margin: 20px 23.5px;
+}
+
+#p2 {
+    grid-area: p2;
+    padding: 0px;
+    margin: 10px 23.5px;
+}
+
+img {
+    grid-area: img;
+    max-width: 100%;
+    display: block;
+    margin: 0px 24.5px;
+}
+
+#section1 {
+    grid-area: section-1;
+}
+
+#section1 img {
+    width: 379px;
+}
+
+#section2 {
+    grid-area: section-2;
+    background-color: #f6f6f6;
+}
+
+#section2 #p2 {
+    margin-right: 40px;
+}
+
+#section3 {
+    grid-area: section-3;
+}
+
+#section3 h2 {
+    margin-top: 30px;
+}
+
+#section3 #p2 {
+    margin-right: 42px;
+}
+
+#section4 {
+    grid-area: section-4;
+    background-color: #f6f6f6;
+    display: grid;
+    grid: "title" auto "p2" auto "img" auto / 1fr;
+    place-content: center;
+}
+
+#title {
+    grid-area: title;
+    font-family: LuckiestGuy, 'Comic Sans MS';
+    font-weight: 400;
+    font-size: 2rem;
+    color: #23272A;
+    text-align: left;
+}
+
+#section4 #p2 {
+    grid-area: p2;
+}
+
+#section4 img {
+    grid-area: img;
+}
+
+footer {
+    grid-area: footer;
+    background-color: #23272A;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+}
+
+picture {
+    width: 162px;
+    height: 30.77px;
+    position: relative;
+    align-self: center;
+}
+
+picture img {
+    margin: 0px;
+}
+
+.logo-simbolo {
+    position: absolute;
+    top: 0%;
+    left: 0%;
+}
+
+.logo-D-maiusculo {
+    position: absolute;
+    top: 23%;
+    left: 32%;
+}
+
+.logo-i {
+    position: absolute;
+    top: 40%;
+    left: 45%;
+}
+
+.logo-i-ponto {
+    position: absolute;
+    top: 19%;
+    left: 45%;
+}
+
+.logo-s {
+    position: absolute;
+    top: 32%;
+    left: 50%;
+}
+
+.logo-c {
+    position: absolute;
+    top: 30%;
+    left: 59%;
+}
+
+.logo-o {
+    position: absolute;
+    top: 28%;
+    left: 70%;
+}
+
+.logo-r {
+    position: absolute;
+    top: 28.5%;
+    left: 82%;
+}
+
+.logo-d-minusculo {
+    position: absolute;
+    top: 21%;
+    left: 90%;
+}
+
+@media screen and (min-width: 428.1px) {
+    body {
+        display: grid;
+        grid: "header" 459px "section-1" auto "section-2" 448px "section-3" auto "section-4" 744px "footer" 134px / 1fr;
+        justify-items: center;
+    }
+    
+    header {
+        grid-area: header;
+        width: 1280px;
+        height: 459px;
+        background-image: url(images/Header-Background-Desktop.png);
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto 44px;
+        place-items: center;
+        column-gap: 16px;
+    }
+    
+    h1 {
+        font-size: 3.5rem;
+        width: 313px;
+        text-align: center;
+        margin: 0px;
+        grid-row: 1 / 2;
+    }
+    
+    #p1 {
+        width: 757px;
+        margin: 35px 0px 30px 0px;
+        text-align: center;
+        grid-row: 2 / 3;
+    }
+    
+    button {
+        height: 44px;
+        margin: 0px;
+    }
+    
+    .button1 {
+        width: 205px;
+        grid-row: 3 / 4;
+        margin-right: 5px;
+    }
+    
+    .button2 {
+        width: 281px;
+        grid-row: 3 / 4;
+        margin-left: 5px;
+    }
+
+    h2 {
+        font-size: 2.5rem;
+    }
+    
+    section {
+        padding: 50px 0px;
+        width: 1280px;
+    }
+
+    #section1, #section3 {
+        display: grid;
+        grid-template-columns: 60% 40%;
+        grid-template-rows: repeat(2, auto);
+        gap: 20px;
+        place-content: center;
+    }
+
+    #section2 {
+        display: grid;
+        grid-template-columns: 40% 60%;
+        grid-template-rows: repeat(2, auto);
+        gap: 20px;
+        place-content: center;
+    }
+
+    #section1 h2, #section3 h2 {
+        width: 329px;
+        margin: 0px;
+        grid-column: 2 / 3;
+        grid-row: 1 / 2;
+        place-self: center start;
+    }
+
+    #section1 #p2, #section3 #p2 {
+        width: 348px;
+        margin: 0px;
+        grid-column: 2 / 3;
+        grid-row: 2 / 3;
+        place-self: start;
+    }
+    
+    #section1 img, #section3 img {
+        margin: 0px;
+        width: 607px;
+        grid-column: 1 / 2;
+        grid-row: 1 / 3;
+        place-self: center end;
+    }
+
+    #section2 h2 {
+        width: 348px;
+        margin: 0px;
+        grid-column: 1 / 2;
+        grid-row: 1 / 2;
+        place-self: end;
+    }
+
+    #section2 #p2 {
+        width: 348px;
+        margin: 0px;
+        grid-column: 1 / 2;
+        grid-row: 2 / 3;
+        place-self: start end;
+    }
+    
+    #section2 img {
+        margin: 0px;
+        grid-column: 2 / 3;
+        grid-row: 1 / 3;
+        place-self: center start;
+    }
+    
+    #title {
+        width: 608px;
+        font-size: 2.5rem;
+        text-align: center;
+        place-self: center;
+    }
+    
+    #section4 #p2 {
+        width: 802px;
+        text-align: center;
+        place-self: center;
+    }
+    
+    #section4 img {
+        margin: 0px;
+        place-self: center;
+    }
+
+    footer {
+        width: 1280px;
+    }
+    
+    picture {
+        width: 230px;
+        height: 43.08px;
+    }
+}
